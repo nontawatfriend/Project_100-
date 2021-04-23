@@ -159,7 +159,7 @@ $(function(){
 			"lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "ทั้งหมด"]],
 			"oLanguage": {
 			"sLengthMenu": "แสดง _MENU_ เร็คคอร์ด ต่อหน้า",
-			"sZeroRecords": "ไม่เจอข้อมูลที่ค้นหา",
+			"sZeroRecords": "ไม่พบข้อมูล",
 			"sInfo": "แสดง _START_ ถึง _END_ ของ _TOTAL_ เร็คคอร์ด",
 			"sInfoEmpty": "แสดง 0 ถึง 0 ของ 0 เร็คคอร์ด",
 			"sInfoFiltered": "(จากเร็คคอร์ดทั้งหมด _MAX_ เร็คคอร์ด)",
@@ -183,7 +183,7 @@ $(function(){
 			"lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "ทั้งหมด"]],
 			"oLanguage": {
 			"sLengthMenu": "แสดง _MENU_ เร็คคอร์ด ต่อหน้า",
-			"sZeroRecords": "ไม่เจอข้อมูลที่ค้นหา",
+			"sZeroRecords": "ไม่พบข้อมูล",
 			"sInfo": "แสดง _START_ ถึง _END_ ของ _TOTAL_ เร็คคอร์ด",
 			"sInfoEmpty": "แสดง 0 ถึง 0 ของ 0 เร็คคอร์ด",
 			"sInfoFiltered": "(จากเร็คคอร์ดทั้งหมด _MAX_ เร็คคอร์ด)",
@@ -207,7 +207,7 @@ $(function(){
 			"lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "ทั้งหมด"]],
 			"oLanguage": {
 			"sLengthMenu": "แสดง _MENU_ เร็คคอร์ด ต่อหน้า",
-			"sZeroRecords": "ไม่เจอข้อมูลที่ค้นหา",
+			"sZeroRecords": "ไม่พบข้อมูล",
 			"sInfo": "แสดง _START_ ถึง _END_ ของ _TOTAL_ เร็คคอร์ด",
 			"sInfoEmpty": "แสดง 0 ถึง 0 ของ 0 เร็คคอร์ด",
 			"sInfoFiltered": "(จากเร็คคอร์ดทั้งหมด _MAX_ เร็คคอร์ด)",

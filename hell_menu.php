@@ -53,7 +53,7 @@ $meQuery = $db->query($meSql);
                                 <input type="number" value="1" min="1" max="99" name="food_unit">
                             <button type="button" class="inc button">+</button>
                         </div>
-                        <button class="btn btn-primary" type="submit" style="margin-left: 10px;">หยิบใส่ตะกร้า</button>
+                        <button class="btn btn-primary" type="submit" style="margin-left: 10px;">เพิ่มรายการ</button>
                     </div>
                 </form>
             </div>

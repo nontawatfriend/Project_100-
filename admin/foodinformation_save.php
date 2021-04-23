@@ -47,7 +47,7 @@ exit(0);
       timer: 1500
     })
   </script>
-  <meta http-equiv="refresh" content="1;url=?page=foodinformation"/>
+  <meta http-equiv="refresh" content="1;url=?page=foodinformation_new"/>
   <?php 
   exit(0);
   }else

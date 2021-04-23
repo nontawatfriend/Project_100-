@@ -47,7 +47,7 @@ session_start ();
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     
-    <!-- js เวลาส่ง form ไปไม่ใลิ้งไปหน้าถัดให้มัน ส่งแบบ ajax -->
+    <!-- js เวลาส่ง form ไปไม่ลิ้งไปหน้าถัดให้มัน ส่งแบบ ajax -->
     <script src="js/jquery.form.js"></script> 
 
     <script>
@@ -163,13 +163,39 @@ if($rowtableid == $_SESSION["id_table"]){
             }
             else{
               $_SESSION["id_table"]=base64_decode($_GET["id_table"]); //แปลงและรับไอดีโต๊ะ
-              require_once("noodle.php");
+              //require_once("noodle.php");
             }
           ?>
       </div><!-- ปิด main-content -->
+<br>
+<footer class="text-center">
+  <!-- Copyright -->
+  <!-- href="https://www.facebook.com/praktakboatnooddletak" -->
+  <div class="bg" style="background-color: rgba(0, 0, 0, 0.2); height: auto;">
+      <?php 
+          $sql="SELECT * FROM restaurant";
+          $result=$db->query($sql);
+          while($row=$result->fetch_array(MYSQLI_ASSOC)){
+      ?>
+      <p align="center" style="font-size:16px; padding-top: 10px; padding-bottom: 10px; font-weight: bold;"> <?php echo $row["restaurant_address"];?>
+      <?php } ?>
+<!--  <label for="" align="center" style="font-size:16px"> © นายนนทวัฒน์ ปัญญาเครือ</label>    
+      <label for="" align="center"> นักศึกษาจาก</label><br>
+      <label for="" align="center"> มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา ตาก</label><br>
+      <label for="" align="center"> สาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์และเทคโนโลยีการเกษตร</label> -->
+      <!-- Facebook -->
+      <a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/praktakboatnooddletak" target="_blank" role="button" title="ติดต่อ facebook"><i class="fa fa-facebook" style="font-size:18px;"></i></a>
+        <!-- ©2021 นายนนทวัฒน์ ปัญญาเครือ -->
+      <!-- <a href="https://www.facebook.com/nontawat.friend/" target="_blank" title="ติดต่อ facebook"><i class="fa fa-facebook"></i></a> -->
+      </p>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
   <div class="cart-fixed">
     <div class="cart">
-        <a href="?page=cart" class="btn btn-warning"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ตะกร้า <span class="badge badge-light" id="unit"><?php echo $_SESSION["sumcart"];?></span></a>
+        <a href="?page=cart" class="btn btn-warning"><i class="fa fa-shopping-cart" aria-hidden="true"></i> รายการทั้งหมด <span class="badge badge-light" id="unit"><?php echo $_SESSION["sumcart"];?></span></a>
     </div>
   </div>
   </div>
@@ -367,12 +393,9 @@ if($rowtableid == $_SESSION["id_table"]){
 
   <!-- ปุ่มเพิ่มลบจำนวน -->
   <script>
-      $(function() {
-
+    $(function() {
   /* $(".numbers-row").append('<div class="inc button">+</div><div class="dec button">-</div>'); */
-
   $(".button").on("click", function() {
-
     var $button = $(this);
     var oldValue = $button.parent().find("input").val();
 

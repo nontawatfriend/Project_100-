@@ -17,7 +17,7 @@ if(!isset($_SESSION["username"]) || $_SESSION["username"] =="" || $_SESSION["pas
     <div class="form-group">
 		<label class="col-sm-5 control-label"><?=$row["pricecategory_name"]?>:</label>
 		<div class="col-sm-3 price_category">
-		    <input type="text" class="form-control" name="price_category" id="price_category" required="required" onBlur="chkprice_category();" value="<?=$row["pricecategory_price"]?>"></input>
+		    <input type="number" class="form-control"  name="price_category" id="price_category" required="required" onBlur="chkprice_category();" value="<?=$row["pricecategory_price"]?>"></input>
         </div>
         <?php } ?>
        

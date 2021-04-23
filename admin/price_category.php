@@ -22,7 +22,7 @@ td{
 <table class="table table-hover table-bordered" id="example" width="100%">
     <thead style="background-color: #35475e">
     <tr>
-        <th><h4>ชื่อประเภทราคา</h4></th>
+        <th><h4>ชื่อประเภทราคาก๋วยเตี๋ยว</h4></th>
         <th><h4>ราคา</h4></th>
         <th><h4>แก้ไข/ลบ</h4></th>
     </tr>

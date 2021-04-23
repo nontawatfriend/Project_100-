@@ -16,7 +16,7 @@ body {
 	z-index: 3;
 	height: 44px;
 	background-color: #fff;
-	border-bottom: 3px solid #2d3d51;
+	border-bottom: 3px solid #b30727/*  #2d3d51 */;
 }
 th{
     color: #fff;
